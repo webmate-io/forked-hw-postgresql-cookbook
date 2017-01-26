@@ -63,7 +63,7 @@ if node['postgresql']['version'].to_f < 9.0
   end
 end
 
-service "postgresql" do
-  supports :restart => true, :status => true, :reload => true
-  action [:enable, :start]
-end
+#service "postgresql" do
+#  supports :restart => true, :status => true, :reload => true
+#  action [:enable, :start]
+#end
